@@ -1,0 +1,216 @@
+{
+	"pages": [
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "夕乐年华"
+			}
+		},
+		{
+			"path": "pages/video/video",
+			"style": {
+				"navigationBarTitleText": "夕乐教育"
+			}
+		},
+		{
+			"path": "pages/entertainment/entertainment",
+			"style": {
+				"navigationBarTitleText": "夕乐发现"
+			}
+		},
+		{
+			"path": "pages/shop/shop",
+			"style": {
+				"navigationBarTitleText": "夕乐购物"
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/medical/medical",
+			"style": {
+				"navigationBarTitleText": "老友问医"
+			}
+		},
+		{
+			"path": "pages/health/health-class",
+			"style": {
+				"navigationBarTitleText": "养生课堂"
+			}
+		},
+		{
+			"path": "pages/assistant/assistant",
+			"style": {
+				"navigationBarTitleText": "夕阳助手"
+			}
+		},
+		{
+			"path": "pages/health/monitor",
+			"style": {
+				"navigationBarTitleText": "健康监测"
+			}
+		},
+		{
+			"path": "pages/service/home-service",
+			"style": {
+				"navigationBarTitleText": "家庭服务"
+			}
+		},
+		{
+			"path": "pages/qa/qa",
+			"style": {
+				"navigationBarTitleText": "夕阳问答"
+			}
+		},
+		{
+			"path": "pages/service/door-service",
+			"style": {
+				"navigationBarTitleText": "小二上门"
+			}
+		},
+		{
+			"path": "pages/medical/department-detail",
+			"style": {
+				"navigationBarTitleText": "科室详情"
+			}
+		},
+		{
+			"path": "pages/medical/doctor-chat",
+			"style": {
+				"navigationBarTitleText": "在线问诊"
+			}
+		},
+		{
+			"path": "pages/medical/news-detail",
+			"style": {
+				"navigationBarTitleText": "健康资讯"
+			}
+		},
+		{
+			"path": "pages/health/category-detail",
+			"style": {
+				"navigationBarTitleText": "课程分类"
+			}
+		},
+		{
+			"path": "pages/health/course-detail",
+			"style": {
+				"navigationBarTitleText": "课程详情"
+			}
+		},
+		{
+			"path": "pages/health/tip-detail",
+			"style": {
+				"navigationBarTitleText": "养生小知识"
+			}
+		},
+		{
+			"path": "pages/health/detail",
+			"style": {
+				"navigationBarTitleText": "健康数据详情"
+			}
+		},
+		{
+			"path": "pages/health/measure",
+			"style": {
+				"navigationBarTitleText": "健康测量"
+			}
+		},
+		{
+			"path": "pages/health/history",
+			"style": {
+				"navigationBarTitleText": "历史记录"
+			}
+		},
+		{
+			"path": "pages/entertainment/game",
+			"style": {
+				"navigationBarTitleText": "游戏"
+			}
+		},
+		{
+			"path": "pages/chat/chat",
+			"style": {
+				"navigationBarTitleText": "聊天"
+			}
+		},
+		{
+			"path": "pages/service/list",
+			"style": {
+				"navigationBarTitleText": "服务列表"
+			}
+		},
+		{
+			"path": "pages/service/booking",
+			"style": {
+				"navigationBarTitleText": "服务预约"
+			}
+		},
+		{
+			"path": "pages/address/list",
+			"style": {
+				"navigationBarTitleText": "地址管理"
+			}
+		},
+		{
+			"path": "pages/qa/detail",
+			"style": {
+				"navigationBarTitleText": "问题详情"
+			}
+		},
+		{
+			"path": "pages/shop/product-detail",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "夕乐年华",
+		"navigationBarBackgroundColor": "#ED5D29",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#ED5D29",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/icons/tabbar/home.png",
+				"selectedIconPath": "static/icons/tabbar/home-active.png"
+			},
+			{
+				"pagePath": "pages/video/video",
+				"text": "视频",
+				"iconPath": "static/icons/tabbar/video.png",
+				"selectedIconPath": "static/icons/tabbar/video-active.png"
+			},
+			{
+				"pagePath": "pages/entertainment/entertainment",
+				"text": "娱乐",
+				"iconPath": "static/icons/tabbar/entertainment.png",
+				"selectedIconPath": "static/icons/tabbar/entertainment-active.png"
+			},
+			{
+				"pagePath": "pages/shop/shop",
+				"text": "商城",
+				"iconPath": "static/icons/tabbar/shop.png",
+				"selectedIconPath": "static/icons/tabbar/shop-active.png"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "我的",
+				"iconPath": "static/icons/tabbar/profile.png",
+				"selectedIconPath": "static/icons/tabbar/profile-active.png"
+			}
+		]
+	}
+}

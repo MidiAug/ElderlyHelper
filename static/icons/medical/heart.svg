@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <!-- 心形 -->
+    <path d="M20,35 L18,33 C8,24 4,20 4,14 C4,9 8,5 13,5 C16,5 19,7 20,9 C21,7 24,5 27,5 C32,5 36,9 36,14 C36,20 32,24 22,33 L20,35 Z" 
+          fill="#ED5D29"/>
+    
+    <!-- 心电图线 -->
+    <path d="M12,20 L16,20 L18,15 L20,25 L22,15 L24,20 L28,20" 
+          stroke="#ffffff" stroke-width="2" fill="none"/>
+</svg> 

@@ -1,0 +1,7 @@
+[
+    { "image": "/static/vedio/video1.png", "title": "视频1" },
+    { "image": "/static/vedio/video2.png", "title": "视频2" },
+    { "image": "/static/vedio/video3.png", "title": "视频3" },
+    { "image": "/static/vedio/video4.png", "title": "视频4" },
+    { "image": "/static/vedio/video5.png", "title": "视频5" }
+] 

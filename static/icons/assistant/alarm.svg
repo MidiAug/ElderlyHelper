@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+    <!-- 闹钟主体 -->
+    <circle cx="15" cy="17" r="10" fill="none" stroke="#ED5D29" stroke-width="2"/>
+    
+    <!-- 闹钟顶部 -->
+    <path d="M10,5 L15,8 L20,5" stroke="#ED5D29" stroke-width="2" fill="none"/>
+    
+    <!-- 指针 -->
+    <path d="M15,17 L15,12" stroke="#ED5D29" stroke-width="2"/>
+    <path d="M15,17 L19,17" stroke="#ED5D29" stroke-width="2"/>
+    
+    <!-- 铃铛 -->
+    <circle cx="22" cy="8" r="2" fill="#ED5D29"/>
+    <path d="M21,10 L23,10" stroke="#ED5D29" stroke-width="1"/>
+</svg> 

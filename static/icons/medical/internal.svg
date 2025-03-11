@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <!-- 听诊器 -->
+    <circle cx="30" cy="10" r="6" fill="#ED5D29"/>
+    <path d="M30,16 C30,16 30,25 22,25 C14,25 14,32 14,32" 
+          stroke="#ED5D29" stroke-width="3" fill="none"/>
+    
+    <!-- 医疗十字 -->
+    <rect x="8" y="4" width="4" height="12" fill="#ED5D29"/>
+    <rect x="4" y="8" width="12" height="4" fill="#ED5D29"/>
+</svg> 

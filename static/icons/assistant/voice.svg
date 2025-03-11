@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+    <!-- 麦克风 -->
+    <rect x="12" y="5" width="6" height="12" rx="3" fill="#ED5D29"/>
+    <path d="M8,15 C8,20 15,20 15,20 C15,20 22,20 22,15" 
+          stroke="#ED5D29" stroke-width="2" fill="none"/>
+    
+    <!-- 声波 -->
+    <path d="M15,22 L15,25" stroke="#ED5D29" stroke-width="2"/>
+    <path d="M10,25 L20,25" stroke="#ED5D29" stroke-width="2"/>
+</svg> 

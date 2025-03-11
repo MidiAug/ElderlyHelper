@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+    <!-- 碗 -->
+    <path d="M10,30 C10,20 20,15 25,15 C30,15 40,20 40,30" 
+          stroke="#ED5D29" stroke-width="2" fill="none"/>
+    <path d="M10,30 L10,35 C10,40 40,40 40,35 L40,30" 
+          fill="#ffffff" stroke="#ED5D29" stroke-width="2"/>
+    
+    <!-- 筷子 -->
+    <rect x="22" y="8" width="2" height="20" transform="rotate(-15 23 18)" fill="#ED5D29"/>
+    <rect x="26" y="8" width="2" height="20" transform="rotate(15 27 18)" fill="#ED5D29"/>
+    
+    <!-- 蒸汽 -->
+    <path d="M20,12 Q25,8 30,12" stroke="#ED5D29" stroke-width="1" fill="none"/>
+    <path d="M15,10 Q20,6 25,10" stroke="#ED5D29" stroke-width="1" fill="none"/>
+    <path d="M25,10 Q30,6 35,10" stroke="#ED5D29" stroke-width="1" fill="none"/>
+</svg> 

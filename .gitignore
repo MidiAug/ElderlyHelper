@@ -1,0 +1,29 @@
+# 忽略 Node.js 依赖目录
+node_modules/
+
+# 忽略编译生成的目录
+/dist/
+/unpackage/
+/build/
+
+# 忽略 IDE 自动生成的文件和目录
+.idea/
+.vscode/
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
+
+# 忽略日志和临时文件
+/logs/
+/temp/
+
+# 忽略本地配置文件
+manifest.local.json
+.env.local
+.env.development.local
+.env.production.local
+
+# 忽略依赖锁定文件（可选，如果不需要版本锁定可以忽略）
+package-lock.json
+yarn.lock

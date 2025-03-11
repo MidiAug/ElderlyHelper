@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <!-- 花朵 -->
+    <circle cx="20" cy="15" r="3" fill="#ED5D29"/>
+    <path d="M20,12 C20,8 24,8 24,12 M20,18 C20,22 24,22 24,18 M17,15 C13,15 13,19 17,19 M23,15 C27,15 27,19 23,19" 
+          fill="none" stroke="#ED5D29" stroke-width="2"/>
+    
+    <!-- 花盆 -->
+    <path d="M15,25 L25,25 L23,35 L17,35 Z" 
+          fill="none" stroke="#ED5D29" stroke-width="2"/>
+    
+    <!-- 茎叶 -->
+    <path d="M20,18 L20,25 M18,22 C15,20 17,18 20,20" 
+          stroke="#ED5D29" stroke-width="2" fill="none"/>
+</svg> 

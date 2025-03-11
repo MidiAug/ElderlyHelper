@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <!-- 毛笔 -->
+    <path d="M15,30 L25,10 C25,10 28,8 30,10 C32,12 30,15 30,15 L10,25" 
+          fill="none" stroke="#ED5D29" stroke-width="2"/>
+    
+    <!-- 墨迹 -->
+    <path d="M10,25 C8,27 5,32 8,35 C11,38 16,35 18,33" 
+          fill="#ED5D29"/>
+    
+    <!-- 砚台 -->
+    <ellipse cx="28" cy="28" rx="6" ry="4" 
+             fill="none" stroke="#ED5D29" stroke-width="2"/>
+</svg> 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+    <!-- 太极图案 -->
+    <circle cx="25" cy="25" r="20" fill="none" stroke="#ED5D29" stroke-width="2"/>
+    <path d="M25,5 A20,20 0 0,1 25,45 A10,10 0 0,1 25,25 A10,10 0 0,0 25,5" fill="#ED5D29"/>
+    <circle cx="25" cy="15" r="3" fill="#ffffff"/>
+    <circle cx="25" cy="35" r="3" fill="#ED5D29"/>
+    
+    <!-- 艾灸标志 -->
+    <path d="M8,15 Q25,5 42,15" stroke="#ED5D29" stroke-width="1" fill="none"/>
+    <path d="M8,20 Q25,10 42,20" stroke="#ED5D29" stroke-width="1" fill="none"/>
+</svg> 

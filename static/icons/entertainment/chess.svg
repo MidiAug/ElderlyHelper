@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <!-- 棋盘背景 -->
+    <rect x="8" y="8" width="24" height="24" fill="none" stroke="#ED5D29" stroke-width="2"/>
+    
+    <!-- 棋盘格线 -->
+    <path d="M16,8 L16,32 M24,8 L24,32" stroke="#ED5D29" stroke-width="1"/>
+    <path d="M8,16 L32,16 M8,24 L32,24" stroke="#ED5D29" stroke-width="1"/>
+    
+    <!-- 棋子 -->
+    <circle cx="16" cy="16" r="3" fill="#ED5D29"/>
+    <circle cx="24" cy="24" r="3" fill="none" stroke="#ED5D29" stroke-width="2"/>
+</svg> 
