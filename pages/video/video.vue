@@ -25,11 +25,11 @@
 							<text class="author-name">{{ video.author }}</text>
 						</view>
 						<view class="options-wrapper">
-							<image class="more-icon" src="/static/icons/options.png" @tap.stop="showOptions(video.id)" />
+							<image class="more-icon" :src="rb + '/icons/options.png'" @tap.stop="showOptions(video.id)" />
 							<!-- 选项菜单 -->
 							<view class="options-menu" v-if="video.showOptions">
 								<view class="option-item" @tap.stop="handleNotInterested(video.id)">
-									<image class="option-icon" src="/static/icons/video/unlike.png" />
+									<image class="option-icon" :src="rb + '/icons/video/unlike.png'" />
 									<text>不感兴趣</text>
 								</view>
 								<view class="option-item" @tap.stop="handleFavorite(video.id)">
@@ -45,15 +45,15 @@
 					</view>
 					<view class="video-footer">
 						<view class="footer-item" @tap.stop="handleShare(video.id)">
-							<image class="footer-icon" src="/static/icons/forward.png" />
+							<image class="footer-icon" :src="rb + '/icons/forward.png'" />
 							<text>{{ video.shares || '转发' }}</text>
 						</view>
 						<view class="footer-item" @tap.stop="handleLike(video.id)">
-							<image class="footer-icon" src="/static/icons/upvote.png" />
+							<image class="footer-icon" :src="rb + '/icons/upvote.png'" />
 							<text>{{ video.likes || '点赞' }}</text>
 						</view>
 						<view class="footer-item" @tap.stop="handleComment(video.id)">
-							<image class="footer-icon" src="/static/icons/comment.png" />
+							<image class="footer-icon" :src="rb + '/icons/comment.png'" />
 							<text>{{ video.comments || '评论' }}</text>
 						</view>
 					</view>
@@ -74,6 +74,7 @@ const rb = config.resourceBase;
 export default {
 	data() {
 		return {
+			rb: rb,
 			currentCategory: 'all',
 			scrollLeft: 0,
 			showToast: false,

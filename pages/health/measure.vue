@@ -71,10 +71,10 @@ export default {
 		return {
 			selectedType: '',
 			measureTypes: [
-				{ id: 'blood-pressure', name: '血压', unit: 'mmHg', icon: '/static/icons/health/blood-pressure.png' },
-				{ id: 'heart-rate', name: '心率', unit: '次/分', icon: '/static/icons/health/heart-rate.png' },
-				{ id: 'blood-oxygen', name: '血氧', unit: '%', icon: '/static/icons/health/blood-oxygen.png' },
-				{ id: 'temperature', name: '体温', unit: '℃', icon: '/static/icons/health/temperature.png' }
+				{ id: 'blood-pressure', name: '血压', unit: 'mmHg', icon: rb + '/icons/health/blood-pressure.png' },
+				{ id: 'heart-rate', name: '心率', unit: '次/分', icon: rb + '/icons/health/heart-rate.png' },
+				{ id: 'blood-oxygen', name: '血唐', unit: 'mmol/L', icon: rb + '/icons/health/blood-sugar.png' },
+				{ id: 'temperature', name: '体温', unit: '℃', icon: rb + '/icons/health/temperature.png' }
 			],
 			measureValue: '',
 			measureTime: '12:00',

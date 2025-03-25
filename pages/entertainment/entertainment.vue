@@ -270,13 +270,11 @@ export default {
 	justify-content: center;
 }
 
-.section-title::before,
-.section-title::after {
+.section-title:before, .section-title:after {
 	content: '';
-	display: block;
-	width: 30px;
-	height: 1px;
-	background-color: #ED5D29;
+	flex: 0.15;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #ED5D29, transparent);
 	margin: 0 15px;
 }
 
@@ -286,16 +284,12 @@ export default {
 	position: relative;
 }
 
-.function-grid::before,
-.contact-list::before {
+.section-title:before, .section-title:after {
 	content: '';
-	display: block;
-	width: 100%;
-	height: 1px;
-	background-color: #eee;
-	position: absolute;
-	top: -15px;
-	left: 0;
+	flex: 0.15;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #ED5D29, transparent);
+	margin: 0 15px;
 }
 
 /* 功能网格样式 */

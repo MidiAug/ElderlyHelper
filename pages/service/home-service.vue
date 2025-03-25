@@ -41,7 +41,7 @@
 		<!-- 紧急服务 -->
 		<view class="emergency-service">
 			<view class="emergency-header">
-				<image src="/static/icons/service/emergency.png" class="emergency-icon"/>
+				<image :src="rb + '/icons/service/emergency.png'" class="emergency-icon"/>
 				<text class="emergency-title">紧急服务</text>
 			</view>
 			<view class="emergency-content">
@@ -58,6 +58,8 @@ const rb = config.resourceBase;
 export default {
 	data() {
 		return {
+			rb:rb,
+			
 			categories: [
 				{ name: '保洁服务', icon: rb + '/icons/service/cleaning.png' },
 				{ name: '维修服务', icon: rb + '/icons/service/repair.png' },

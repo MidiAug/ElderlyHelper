@@ -55,33 +55,33 @@ export default {
 	data() {
 		return {
 			departments: [
-				{ name: '内科', icon: rb + '/icons/medical/internal.svg' },
-				{ name: '外科', icon: rb + '/icons/medical/surgery.svg' },
-				{ name: '骨科', icon: rb + '/icons/medical/bone.svg' },
-				{ name: '心内科', icon: rb + '/icons/medical/heart.svg' },
-				{ name: '神经内科', icon: rb + '/icons/medical/nerve.svg' },
-				{ name: '眼科', icon: rb + '/icons/medical/eye.svg' },
-				{ name: '口腔科', icon: rb + '/icons/medical/dental.svg' },
-				{ name: '康复科', icon: rb + '/icons/medical/rehabilitation.svg' }
+				{ name: '内科', icon: rb + '/icons/medical/1.png' },
+				{ name: '外科', icon: rb + '/icons/medical/2.png' },
+				{ name: '骨科', icon: rb + '/icons/medical/3.png' },
+				{ name: '心内科', icon: rb + '/icons/medical/4.png' },
+				{ name: '神经内科', icon: rb + '/icons/medical/5.png' },
+				{ name: '眼科', icon: rb + '/icons/medical/6.png' },
+				{ name: '口腔科', icon: rb + '/icons/medical/7.png' },
+				{ name: '康复科', icon: rb + '/icons/medical/8.png' }
 			],
 			doctors: [
 				{
 					name: '张医生',
 					title: '主任医师',
 					department: '内科',
-					avatar: rb + '/images/medical/doctor1.png'
+					avatar: rb + '/pictures/medical/doctor1.png'
 				},
 				{
 					name: '李医生',
 					title: '副主任医师',
 					department: '骨科',
-					avatar: rb + '/images/medical/doctor2.png'
+					avatar: rb + '/pictures/medical/doctor2.png'
 				},
 				{
 					name: '王医生',
 					title: '主任医师',
 					department: '心内科',
-					avatar: rb + '/images/medical/doctor3.png'
+					avatar: rb + '/pictures/medical/doctor3.png'
 				}
 			],
 			healthNews: [
@@ -144,7 +144,7 @@ export default {
 .search-btn {
 	width: 80px;
 	height: 40px;
-	background-color: #007aff;
+	background-color: #ED5D29;
 	color: white;
 	border-radius: 20px;
 	font-size: 16px;
@@ -233,7 +233,7 @@ export default {
 .consult-btn {
 	width: 80px;
 	height: 36px;
-	background-color: #007aff;
+	background-color: #ED5D29;
 	color: white;
 	border-radius: 18px;
 	font-size: 14px;

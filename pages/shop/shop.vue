@@ -131,7 +131,7 @@ export default {
 }
 
 .product-item {
-	width: 44%;
+	width: 43%;
 	background-color: white;
 	margin-bottom: 15px;
 	padding: 10px;

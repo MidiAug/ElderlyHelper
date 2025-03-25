@@ -75,6 +75,7 @@ import { productData } from './productData.js'
 export default {
 	data() {
 		return {
+			rb:rb,
 			isCollected: false,
 			showToast: false,
 			toastMessage: '',
@@ -87,6 +88,9 @@ export default {
 			// 从预设数据中获取商品信息
 			if (productData[productId]) {
 				this.product = productData[productId];
+				if (this.product.images && this.product.images.length > 0) {
+				this.product.images = [rb + this.product.images[0]];
+			}
 			} else {
 				// 如果找不到商品，显示提示并返回
 				uni.showToast({

@@ -10,7 +10,7 @@
 							<text class="message-text">{{ message.content }}</text>
 							<text :class="['message-time', message.type]">{{ message.time }}</text>
 						</view>
-						<image v-if="message.type === 'sent'" class="avatar" src="/static/icons/video/my-avatar.png" />
+						<image v-if="message.type === 'sent'" class="avatar" :src="rb+ '/icons/profile/avatar.png'" />
 					</view>
 				</view>
 			</view>
@@ -32,6 +32,7 @@ const rb = config.resourceBase;
 export default {
 	data() {
 		return {
+			rb: rb,
 			contactId: null,
 			contactAvatar: '',
 			currentChat: [],
@@ -42,7 +43,7 @@ export default {
 	onLoad(options) {
 		if (options.contactId) {
 			this.contactId = parseInt(options.contactId);
-			this.contactAvatar = `/static/icons/entertainment/role${this.contactId}.png`;
+			this.contactAvatar = rb + `/icons/entertainment/role${this.contactId}.png`;
 			this.loadChatHistory();
 		}
 	},

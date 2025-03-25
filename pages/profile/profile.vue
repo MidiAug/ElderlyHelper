@@ -2,7 +2,7 @@
 	<view class="container">
 		<!-- 用户信息 -->
 		<view class="user-info">
-			<image class="avatar" src="/static/icons/profile/avatar.png" />
+			<image class="avatar" :src="rb + '/icons/profile/avatar.png'" />
 			<view class="user-details">
 				<text class="username">老王</text>
 				<text class="user-id">ID: 888888</text>
@@ -14,7 +14,7 @@
 			<text class="section-title">我的服务</text>
 			<view class="function-grid">
 				<view class="function-item" v-for="(item, index) in functions" :key="index" @click="handleFunction(item)">
-					<image class="function-icon" :src="`/static/icons/profile/${index + 1}.png`" />
+					<image class="function-icon" :src="item.icon" />
 					<text class="function-text">{{ item.name }}</text>
 				</view>
 			</view>
@@ -26,7 +26,7 @@
 			<view class="settings">
 				<view class="setting-item" v-for="(setting, index) in settings" :key="index" @click="handleSetting(setting)">
 					<view class="setting-left">
-						<image class="setting-icon" :src="`/static/icons/profile/${index + 11}.png`" />
+						<image class="setting-icon" :src="setting.icon" />
 						<text class="setting-text">{{ setting.name }}</text>
 					</view>
 					<image class="arrow-icon" src="/static/icons/arrow.png" />
@@ -45,6 +45,8 @@ export default {
 	name: 'profile',
 	data() {
 		return {
+			rb: rb,
+
 			functions: [
 				{ name: '我的订单', icon: rb + '/icons/profile/1.png' },
 				{ name: '我的收藏', icon: rb + '/icons/profile/2.png' },
@@ -137,10 +139,10 @@ export default {
 
 .section-title:before, .section-title:after {
 	content: '';
-	flex: 0.1;
-	height: 1px;
-	background-color: #333;
-	margin: 0 10px;
+	flex: 0.15;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #ED5D29, transparent);
+	margin: 0 15px;
 }
 
 .function-grid {

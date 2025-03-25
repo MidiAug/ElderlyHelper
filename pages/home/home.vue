@@ -1,9 +1,9 @@
 <template>
-	<view class="container">
+	<view class="container" v-if="rb">
 		<!-- 搜索框 -->
 		<view class="search-bar">
 			<input type="text" placeholder="搜索" />
-			<image class="search-icon" src="/static/icons/search.png" />
+			<image class="search-icon" :src="rb + '/icons/search.png'" />
 		</view>
 
 		<!-- 轮播图 -->
@@ -44,13 +44,15 @@ export default {
 	name: 'Home',
 	data() {
 		return {
+			rb: rb,
+			
 			swiperImages: [
 				rb + '/pictures/home/rotation1.png',
 				rb + '/pictures/home/rotation2.png',
 				rb + '/pictures/home/rotation3.png'
 			],
 			functions: [
-				{ image: rb + '/icons/home/1.png',name: '老友问医', path: '/pages/medical/medical' },
+				{ image: rb + '/icons/home/1.png', name: '老友问医', path: '/pages/medical/medical' },
 				{ image: rb + '/icons/home/2.png', name: '养生课堂', path: '/pages/health/health-class' },
 				{ image: rb + '/icons/home/3.png', name: '夕阳助手', path: '/pages/assistant/assistant' },
 				{ image: rb + '/icons/home/4.png', name: '健康监测', path: '/pages/health/monitor' },
@@ -102,7 +104,7 @@ export default {
 	display: flex;
 	align-items: center;
 	background-color: white;
-	padding: 8px 15px;
+	padding: 0px 15px;
 	border-radius: 25px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 	transition: all 0.3s ease;
@@ -179,7 +181,7 @@ input {
 }
 
 .hot-videos {
-	width: 100%;
+	width: 95%;
 	margin-top: 20px;
 	background-color: #fff;
 	padding: 20px;

@@ -2,7 +2,7 @@
 	<view class="container">
 		<!-- 助手头像和问候语 -->
 		<view class="assistant-header">
-			<image src="/static/icons/assistant/avatar.png" class="assistant-avatar"/>
+			<image :src="rb+ '/icons/assistant/avatar.png'" class="assistant-avatar"/>
 			<view class="greeting">
 				<text class="greeting-text">您好，我是您的智能助手</text>
 				<text class="greeting-sub">有什么可以帮您的吗？</text>
@@ -23,7 +23,7 @@
 			<view class="faq-list">
 				<view class="faq-item" v-for="(faq, index) in displayedFaqs" :key="index" @tap="askQuestion(faq)">
 					<text class="faq-text">{{ faq.question }}</text>
-					<image src="/static/icons/assistant/arrow.png" class="arrow-icon"/>
+					<image :src="rb+ '/icons/assistant/arrow.png'" class="arrow-icon"/>
 				</view>
 			</view>
 		</view>
@@ -41,7 +41,7 @@
 		<!-- 语音输入按钮 -->
 		<view class="voice-input">
 			<button class="voice-btn" @touchstart="startVoiceInput" @touchend="endVoiceInput">
-				<image src="/static/icons/assistant/voice.png" class="voice-icon"/>
+				<image :src="rb+ '/icons/assistant/voice.png'" class="voice-icon"/>
 				<text>按住说话</text>
 			</button>
 		</view>
@@ -62,6 +62,7 @@ const rb = config.resourceBase;
 export default {
 	data() {
 		return {
+			rb:rb,
 			inputText: '',
 			showAnswer: false,
 			currentQuestion: '',
