@@ -53,14 +53,16 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
 export default {
 	data() {
 		return {
 			categories: [
-				{ name: '保洁服务', icon: '/static/icons/service/cleaning.png' },
-				{ name: '维修服务', icon: '/static/icons/service/repair.png' },
-				{ name: '护理服务', icon: '/static/icons/service/care.png' },
-				{ name: '送餐服务', icon: '/static/icons/service/food.png' }
+				{ name: '保洁服务', icon: rb + '/icons/service/cleaning.png' },
+				{ name: '维修服务', icon: rb + '/icons/service/repair.png' },
+				{ name: '护理服务', icon: rb + '/icons/service/care.png' },
+				{ name: '送餐服务', icon: rb + '/icons/service/food.png' }
 			],
 			hotServices: [
 				{
@@ -68,28 +70,28 @@ export default {
 					description: '专业保洁，打扫卫生',
 					price: 80,
 					unit: '次',
-					image: '/static/images/service/cleaning.png'
+					image: rb + '/images/service/cleaning.png'
 				},
 				{
 					name: '水电维修',
 					description: '水管漏水，电路维修',
 					price: 100,
 					unit: '次',
-					image: '/static/images/service/repair.png'
+					image: rb + '/images/service/repair.png'
 				},
 				{
 					name: '居家护理',
 					description: '专业护工，贴心照料',
 					price: 150,
 					unit: '天',
-					image: '/static/images/service/care.png'
+					image: rb + '/images/service/care.png'
 				}
 			],
 			guarantees: [
-				{ text: '专业认证', icon: '/static/icons/service/certified.png' },
-				{ text: '安全保障', icon: '/static/icons/service/safe.png' },
-				{ text: '准时上门', icon: '/static/icons/service/ontime.png' },
-				{ text: '满意付款', icon: '/static/icons/service/payment.png' }
+				{ text: '专业认证', icon: rb + '/icons/service/certified.png' },
+				{ text: '安全保障', icon: rb + '/icons/service/safe.png' },
+				{ text: '准时上门', icon: rb + '/icons/service/ontime.png' },
+				{ text: '满意付款', icon: rb + '/icons/service/payment.png' }
 			]
 		}
 	},

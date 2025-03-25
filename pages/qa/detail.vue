@@ -85,13 +85,15 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
 export default {
 	data() {
 		return {
 			question: {
 				id: 1,
 				username: '老年生活达人',
-				userAvatar: '/static/images/avatar/user1.png',
+				userAvatar: rb + '/images/avatar/user1.png',
 				time: '2024-03-15 14:30',
 				title: '请问附近有什么适合老年人的运动场所吗？',
 				content: '最近想找个地方锻炼身体，希望有适合老年人的运动设施，最好是免费或者价格实惠的场所。',
@@ -100,15 +102,15 @@ export default {
 				comments: [
 					{
 						username: '健康顾问',
-						userAvatar: '/static/images/avatar/user2.png',
+						userAvatar: rb + '/images/avatar/user2.png',
 						time: '2024-03-15 15:00',
 						content: '您可以去附近的公园，那里有专门的老年人健身区，设施齐全而且免费。建议早上或傍晚去，可以认识很多志同道合的朋友。',
-						images: ['/static/images/qa/park.jpg'],
+						images: [rb + '/images/qa/park.jpg'],
 						likes: 8
 					},
 					{
 						username: '社区工作者',
-						userAvatar: '/static/images/avatar/user3.png',
+						userAvatar: rb + '/images/avatar/user3.png',
 						time: '2024-03-15 15:30',
 						content: '我们社区活动中心也有室内健身房，每天上午9点到下午5点开放，有专业教练指导，月卡只要50元。',
 						images: [],
@@ -138,7 +140,7 @@ export default {
 			// 添加新评论
 			const newComment = {
 				username: '当前用户',
-				userAvatar: '/static/images/avatar/default.png',
+				userAvatar: rb + '/images/avatar/default.png',
 				time: new Date().toLocaleString(),
 				content: this.newComment,
 				images: [],

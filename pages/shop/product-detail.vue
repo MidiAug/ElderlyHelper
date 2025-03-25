@@ -41,7 +41,7 @@
 			<view class="bottom-bar">
 				<view class="action-buttons">
 					<view class="collect-btn" @tap="toggleCollect">
-						<image :src="isCollected ? '/static/icons/star-filled.png' : '/static/icons/star.png'" class="action-icon"/>
+						<image :src="isCollected ? rb + '/icons/star-filled.png' : rb + '/icons/star.png'" class="action-icon"/>
 						<text>{{ isCollected ? '已收藏' : '收藏' }}</text>
 					</view>
 					<view class="customer-service" @tap="contactService">
@@ -68,6 +68,8 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
 import { productData } from './productData.js'
 
 export default {

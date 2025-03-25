@@ -20,9 +20,3 @@ export function createApp() {
 	}
 }
 // #endif
-
-const config = {
-	resourceBase: '/static', // 本地资源
-	// resourceBase: 'https://yourcdn.com/', // 线上资源（预览时可切换）
-  };
-export default config;

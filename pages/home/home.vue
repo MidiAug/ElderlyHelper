@@ -8,15 +8,15 @@
 
 		<!-- 轮播图 -->
 		<swiper class="swiper" autoplay="true" interval="3000" circular="true">
-			<swiper-item v-for="(item, index) in [1, 2, 3]" :key="index">
-				<image class="swiper-image" :src="`/static/pictures/home/rotation${index + 1}.png`" />
+			<swiper-item v-for="(item, index) in swiperImages" :key="index">
+				<image class="swiper-image" :src="item" />
 			</swiper-item>
 		</swiper>
 
 		<!-- 功能入口 -->
 		<view class="function-buttons">
 			<view class="button" v-for="(item, index) in functions" :key="index" @tap="navigateTo(item.path)">
-				<image class="button-image" :src="`/static/icons/home/${index + 1}.png`" />
+				<image class="button-image" :src="item.image" />
 				<text>{{ item.name }}</text>
 			</view>
 		</view>
@@ -44,15 +44,20 @@ export default {
 	name: 'Home',
 	data() {
 		return {
+			swiperImages: [
+				rb + '/pictures/home/rotation1.png',
+				rb + '/pictures/home/rotation2.png',
+				rb + '/pictures/home/rotation3.png'
+			],
 			functions: [
-				{ name: '老友问医', path: '/pages/medical/medical' },
-				{ name: '养生课堂', path: '/pages/health/health-class' },
-				{ name: '夕阳助手', path: '/pages/assistant/assistant' },
-				{ name: '健康监测', path: '/pages/health/monitor' },
-				{ name: '休闲娱乐', path: '/pages/entertainment/entertainment' },
-				{ name: '家庭服务', path: '/pages/service/home-service' },
-				{ name: '夕阳问答', path: '/pages/qa/qa' },
-				{ name: '小二上门', path: '/pages/service/door-service' }
+				{ image: rb + '/icons/home/1.png',name: '老友问医', path: '/pages/medical/medical' },
+				{ image: rb + '/icons/home/2.png', name: '养生课堂', path: '/pages/health/health-class' },
+				{ image: rb + '/icons/home/3.png', name: '夕阳助手', path: '/pages/assistant/assistant' },
+				{ image: rb + '/icons/home/4.png', name: '健康监测', path: '/pages/health/monitor' },
+				{ image: rb + '/icons/home/5.png', name: '休闲娱乐', path: '/pages/entertainment/entertainment' },
+				{ image: rb + '/icons/home/6.png', name: '家庭服务', path: '/pages/service/home-service' },
+				{ image: rb + '/icons/home/7.png', name: '夕阳问答', path: '/pages/qa/qa' },
+				{ image: rb + '/icons/home/8.png', name: '小二上门', path: '/pages/service/door-service' }
 			],
 			videos: this.getRandomVideos()
 		};
@@ -61,10 +66,10 @@ export default {
 		getRandomVideos() {
 			const allVideos = [
 				{ image: rb + '/pictures/home/video1.png', title: '脖子疼怎么办？', bv: 'BV1zP4y167Zn' },
-				{ image: '/static/pictures/home/video2.png', title: '在家也能做的健身操', bv: 'BV1rd4y1q7xQ' },
-				{ image: '/static/pictures/home/video3.png', title: '养老机器人来了', bv: 'BV12j9MYkENd' },
-				{ image: '/static/pictures/home/video4.png', title: '更适合我们的新产品', bv: 'BV1Rm421V7kk' },
-				{ image: '/static/pictures/home/video5.png', title: '早饭吃什么对身体好', bv: 'BV1jv4y1V7ix' }
+				{ image: rb + '/pictures/home/video2.png', title: '在家也能做的健身操', bv: 'BV1rd4y1q7xQ' },
+				{ image: rb + '/pictures/home/video3.png', title: '养老机器人来了', bv: 'BV12j9MYkENd' },
+				{ image: rb + '/pictures/home/video4.png', title: '更适合我们的新产品', bv: 'BV1Rm421V7kk' },
+				{ image: rb + '/pictures/home/video5.png', title: '早饭吃什么对身体好', bv: 'BV1jv4y1V7ix' }
 			];
 			return allVideos.sort(() => 0.5 - Math.random()).slice(0, 4);
 		},

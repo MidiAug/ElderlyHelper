@@ -33,6 +33,9 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	name: 'doctor-chat',
 	data() {
@@ -41,9 +44,9 @@ export default {
 				name: '张医生',
 				title: '主任医师',
 				department: '内科',
-				avatar: '/static/images/medical/doctor1.png'
+				avatar: rb + '/images/medical/doctor1.png'
 			},
-			userAvatar: '/static/icons/profile/avatar.png',
+			userAvatar: rb + '/icons/profile/avatar.png',
 			messages: [
 				{
 					type: 'receive',

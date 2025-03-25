@@ -57,7 +57,7 @@
 						<text class="service-price">¥{{ service.price }}</text>
 					</view>
 					<image 
-						:src="selectedServices.includes(service.id) ? '/static/icons/service/checked.png' : '/static/icons/service/unchecked.png'" 
+						:src="selectedServices.includes(service.id) ? rb + '/icons/service/checked.png' : rb + '/icons/service/unchecked.png'" 
 						class="check-icon"
 					/>
 				</view>
@@ -86,6 +86,8 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
 export default {
 	data() {
 		return {
@@ -100,25 +102,25 @@ export default {
 					id: 1,
 					name: '居家保洁',
 					price: 100,
-					icon: '/static/icons/service/cleaning.png'
+					icon: rb + '/icons/service/cleaning.png'
 				},
 				{
 					id: 2,
 					name: '维修服务',
 					price: 150,
-					icon: '/static/icons/service/repair.png'
+					icon: rb + '/icons/service/repair.png'
 				},
 				{
 					id: 3,
 					name: '代购服务',
 					price: 50,
-					icon: '/static/icons/service/shopping.png'
+					icon: rb + '/icons/service/shopping.png'
 				},
 				{
 					id: 4,
 					name: '陪护服务',
 					price: 200,
-					icon: '/static/icons/service/care.png'
+					icon: rb + '/icons/service/care.png'
 				}
 			],
 			selectedServices: [],

@@ -184,32 +184,32 @@
 			{
 				"pagePath": "pages/home/home",
 				"text": "首页",
-				"iconPath": "static/icons/tabbar/home.png",
-				"selectedIconPath": "static/icons/tabbar/home-active.png"
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-active.png"
 			},
 			{
 				"pagePath": "pages/video/video",
 				"text": "视频",
-				"iconPath": "static/icons/tabbar/video.png",
-				"selectedIconPath": "static/icons/tabbar/video-active.png"
+				"iconPath": "static/tabbar/video.png",
+				"selectedIconPath": "static/tabbar/video-active.png"
 			},
 			{
 				"pagePath": "pages/entertainment/entertainment",
 				"text": "娱乐",
-				"iconPath": "static/icons/tabbar/entertainment.png",
-				"selectedIconPath": "static/icons/tabbar/entertainment-active.png"
+				"iconPath": "static/tabbar/entertainment.png",
+				"selectedIconPath": "static/tabbar/entertainment-active.png"
 			},
 			{
 				"pagePath": "pages/shop/shop",
 				"text": "商城",
-				"iconPath": "static/icons/tabbar/shop.png",
-				"selectedIconPath": "static/icons/tabbar/shop-active.png"
+				"iconPath": "static/tabbar/shop.png",
+				"selectedIconPath": "static/tabbar/shop-active.png"
 			},
 			{
 				"pagePath": "pages/profile/profile",
 				"text": "我的",
-				"iconPath": "static/icons/tabbar/profile.png",
-				"selectedIconPath": "static/icons/tabbar/profile-active.png"
+				"iconPath": "static/tabbar/profile.png",
+				"selectedIconPath": "static/tabbar/profile-active.png"
 			}
 		]
 	}

@@ -49,6 +49,10 @@
 </template>
 
 <script>
+	
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	name: 'health-detail',
 	data() {

@@ -30,6 +30,9 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	name: 'department-detail',
 	data() {
@@ -40,13 +43,13 @@ export default {
 					name: '张医生',
 					title: '主任医师',
 					specialty: '擅长：高血压、冠心病等慢性病诊治',
-					avatar: '/static/images/medical/doctor1.png'
+					avatar: rb + '/images/medical/doctor1.png'
 				},
 				{
 					name: '李医生',
 					title: '副主任医师',
 					specialty: '擅长：糖尿病、内分泌疾病诊治',
-					avatar: '/static/images/medical/doctor2.png'
+					avatar: rb + '/images/medical/doctor2.png'
 				}
 			],
 			departmentIntro: '本科室是医院重点专科，拥有一支技术精湛、经验丰富的专业医疗团队。科室设备先进，诊疗环境舒适，致力于为患者提供优质的医疗服务。'

@@ -26,6 +26,9 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	name: 'news-detail',
 	data() {
@@ -33,7 +36,7 @@ export default {
 			newsTitle: '',
 			newsDate: '2024-03-09',
 			newsSource: '健康资讯',
-			newsImage: '/static/images/medical/news1.png',
+			newsImage: rb + '/images/medical/news1.png',
 			content: [
 				'随着年龄的增长，老年人的饮食健康变得越来越重要。科学合理的饮食不仅能够预防疾病，还能提高生活质量。',
 				'首先，老年人应该注意营养均衡，每天的饮食要包含充足的蛋白质、维生素和矿物质。其次，要控制饮食量，不要暴饮暴食。',

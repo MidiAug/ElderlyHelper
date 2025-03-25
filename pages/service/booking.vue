@@ -80,6 +80,8 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
 export default {
 	name: 'service-booking',
 	data() {
@@ -87,10 +89,10 @@ export default {
 			service: {
 				id: 1,
 				name: '日常保洁',
-				description: '专业保洁人员上门服务，包含房间清洁、卫生打扫等',
+				description: '专业保洁人员上门服务，包含房间卫生打扫等',
 				price: 80,
 				unit: '次',
-				image: '/static/images/service/clean.png'
+				image: rb + '/images/service/clean.png'
 			},
 			bookingDate: '2024-03-09',
 			bookingTime: '09:00',

@@ -26,6 +26,8 @@
 
 <script>
 import { chatData } from './chatData.js'
+import config from '@/common/config.js';
+const rb = config.resourceBase;
 
 export default {
 	data() {

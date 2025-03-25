@@ -6,7 +6,7 @@ export const productData = {
 		originalPrice: 399,
 		sales: 1000,
 		category: '医护保健',
-		images: ['/static/pictures/shop/goods1.png'],
+		images: ['/pictures/shop/goods1.png'],
 		details: [
 			{ label: '品牌', value: '康福医疗' },
 			{ label: '型号', value: 'BP-2023' },
@@ -31,7 +31,7 @@ export const productData = {
 		originalPrice: 299,
 		sales: 800,
 		category: '医护保健',
-		images: ['/static/pictures/shop/goods2.png'],
+		images: ['/pictures/shop/goods2.png'],
 		details: [
 			{ label: '品牌', value: '呼吸康' },
 			{ label: '型号', value: 'NB-2023' },
@@ -56,7 +56,7 @@ export const productData = {
 		originalPrice: 799,
 		sales: 500,
 		category: '医护保健',
-		images: ['/static/pictures/shop/goods3.png'],
+		images: ['/pictures/shop/goods3.png'],
 		details: [
 			{ label: '品牌', value: '声丽' },
 			{ label: '型号', value: 'HA-2023' },
@@ -81,7 +81,7 @@ export const productData = {
 		originalPrice: 359,
 		sales: 1200,
 		category: '医护保健',
-		images: ['/static/pictures/shop/goods4.png'],
+		images: ['/pictures/shop/goods4.png'],
 		details: [
 			{ label: '品牌', value: '养足堂' },
 			{ label: '型号', value: 'FT-2023' },
@@ -106,7 +106,7 @@ export const productData = {
 		originalPrice: 168,
 		sales: 2000,
 		category: '医护保健',
-		images: ['/static/pictures/shop/goods5.png'],
+		images: ['/pictures/shop/goods5.png'],
 		details: [
 			{ label: '品牌', value: '健康优选' },
 			{ label: '规格', value: '60片/瓶' },
@@ -131,7 +131,7 @@ export const productData = {
 		originalPrice: 499,
 		sales: 600,
 		category: '医护保健',
-		images: ['/static/pictures/shop/goods6.png'],
+		images: ['/pictures/shop/goods6.png'],
 		details: [
 			{ label: '品牌', value: '康复佳' },
 			{ label: '型号', value: 'IR-2023' },
@@ -156,7 +156,7 @@ export const productData = {
 		originalPrice: 199,
 		sales: 1500,
 		category: '老年服饰',
-		images: ['/static/pictures/shop/goods7.png'],
+		images: ['/pictures/shop/goods7.png'],
 		details: [
 			{ label: '品牌', value: '暖馨' },
 			{ label: '材质', value: '纯棉+加绒' },
@@ -181,7 +181,7 @@ export const productData = {
 		originalPrice: 399,
 		sales: 800,
 		category: '老年服饰',
-		images: ['/static/pictures/shop/goods8.png'],
+		images: ['/pictures/shop/goods8.png'],
 		details: [
 			{ label: '品牌', value: '暖冬' },
 			{ label: '材质', value: '聚酯纤维+羽绒' },
@@ -206,7 +206,7 @@ export const productData = {
 		originalPrice: 259,
 		sales: 1200,
 		category: '老年服饰',
-		images: ['/static/pictures/shop/goods9.png'],
+		images: ['/pictures/shop/goods9.png'],
 		details: [
 			{ label: '品牌', value: '步安适' },
 			{ label: '材质', value: '网布+橡胶' },
@@ -231,7 +231,7 @@ export const productData = {
 		originalPrice: 199,
 		sales: 1000,
 		category: '老年服饰',
-		images: ['/static/pictures/shop/goods10.png'],
+		images: ['/pictures/shop/goods10.png'],
 		details: [
 			{ label: '品牌', value: '舒适主义' },
 			{ label: '材质', value: '棉质+弹力纤维' },
@@ -256,7 +256,7 @@ export const productData = {
 		originalPrice: 229,
 		sales: 900,
 		category: '老年服饰',
-		images: ['/static/pictures/shop/goods11.png'],
+		images: ['/pictures/shop/goods11.png'],
 		details: [
 			{ label: '品牌', value: '暖心' },
 			{ label: '材质', value: '聚酯纤维+加绒' },
@@ -281,7 +281,7 @@ export const productData = {
 		originalPrice: 899,
 		sales: 500,
 		category: '老年数码',
-		images: ['/static/pictures/shop/goods12.png'],
+		images: ['/pictures/shop/goods12.png'],
 		details: [
 			{ label: '品牌', value: '长辈优选' },
 			{ label: '屏幕尺寸', value: '5.5英寸' },
@@ -306,7 +306,7 @@ export const productData = {
 		originalPrice: 499,
 		sales: 700,
 		category: '老年数码',
-		images: ['/static/pictures/shop/goods13.png'],
+		images: ['/pictures/shop/goods13.png'],
 		details: [
 			{ label: '品牌', value: '智护' },
 			{ label: '屏幕', value: '1.4英寸彩屏' },
@@ -331,7 +331,7 @@ export const productData = {
 		originalPrice: 89,
 		sales: 1500,
 		category: '老年数码',
-		images: ['/static/pictures/shop/goods14.png'],
+		images: ['/pictures/shop/goods14.png'],
 		details: [
 			{ label: '品牌', value: '易控' },
 			{ label: '适用范围', value: '通用电视' },
@@ -356,7 +356,7 @@ export const productData = {
 		originalPrice: 169,
 		sales: 1100,
 		category: '老年数码',
-		images: ['/static/pictures/shop/goods15.png'],
+		images: ['/pictures/shop/goods15.png'],
 		details: [
 			{ label: '品牌', value: '声悦' },
 			{ label: '供电方式', value: '充电+电池' },
@@ -381,7 +381,7 @@ export const productData = {
 		originalPrice: 299,
 		sales: 800,
 		category: '老年数码',
-		images: ['/static/pictures/shop/goods16.png'],
+		images: ['/pictures/shop/goods16.png'],
 		details: [
 			{ label: '品牌', value: '明视' },
 			{ label: '放大倍数', value: '2-5倍可调' },

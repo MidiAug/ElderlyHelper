@@ -38,6 +38,8 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
 export default {
 	name: 'service-list',
 	data() {
@@ -60,7 +62,7 @@ export default {
 					unit: '次',
 					orderCount: 258,
 					category: 'clean',
-					image: '/static/images/service/clean.png'
+					image: rb + '/images/service/clean.png'
 				},
 				{
 					id: 2,
@@ -70,7 +72,7 @@ export default {
 					unit: '小时',
 					orderCount: 186,
 					category: 'care',
-					image: '/static/images/service/care.png'
+					image: rb + '/images/service/care.png'
 				},
 				{
 					id: 3,
@@ -80,7 +82,7 @@ export default {
 					unit: '次',
 					orderCount: 126,
 					category: 'medical',
-					image: '/static/images/service/medical.png'
+					image: rb + '/images/service/medical.png'
 				}
 			]
 		}

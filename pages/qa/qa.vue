@@ -103,6 +103,8 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
 export default {
 	data() {
 		return {
@@ -113,7 +115,7 @@ export default {
 				{
 					id: 1,
 					userName: '张大爷',
-					userAvatar: '/static/images/qa/avatar1.png',
+					userAvatar: rb + '/images/qa/avatar1.png',
 					title: '每天应该走多少步比较合适？',
 					content: '我今年65岁，身体还算硬朗，想知道每天应该走多少步比较合适，不会太少也不会太累...',
 					time: '10分钟前',
@@ -124,13 +126,13 @@ export default {
 				{
 					id: 2,
 					userName: '李奶奶',
-					userAvatar: '/static/images/qa/avatar2.png',
+					userAvatar: rb + '/images/qa/avatar2.png',
 					title: '有什么好的理财建议吗？',
 					content: '退休金每月都有结余，想找个稳妥的投资方式，求推荐...',
 					time: '1小时前',
 					answerCount: 8,
 					likeCount: 15,
-					images: ['/static/images/qa/finance.png']
+					images: [rb + '/images/qa/finance.png']
 				}
 			],
 			isLoading: false,

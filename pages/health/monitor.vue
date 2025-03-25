@@ -53,6 +53,9 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	data() {
 		return {
@@ -61,7 +64,7 @@ export default {
 					name: '血压',
 					value: '120/80',
 					unit: 'mmHg',
-					icon: '/static/icons/health/blood-pressure.png',
+					icon: rb + '/icons/health/blood-pressure.png',
 					status: 'normal',
 					statusText: '正常'
 				},
@@ -69,7 +72,7 @@ export default {
 					name: '心率',
 					value: '75',
 					unit: '次/分',
-					icon: '/static/icons/health/heart-rate.png',
+					icon: rb + '/icons/health/heart-rate.png',
 					status: 'normal',
 					statusText: '正常'
 				},
@@ -77,7 +80,7 @@ export default {
 					name: '血糖',
 					value: '5.6',
 					unit: 'mmol/L',
-					icon: '/static/icons/health/blood-sugar.png',
+					icon: rb + '/icons/health/blood-sugar.png',
 					status: 'warning',
 					statusText: '偏高'
 				},
@@ -85,7 +88,7 @@ export default {
 					name: '体温',
 					value: '36.5',
 					unit: '°C',
-					icon: '/static/icons/health/temperature.png',
+					icon: rb + '/icons/health/temperature.png',
 					status: 'normal',
 					statusText: '正常'
 				}

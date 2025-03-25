@@ -47,38 +47,41 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	name: 'medical',
 	data() {
 		return {
 			departments: [
-				{ name: '内科', icon: '/static/icons/medical/internal.svg' },
-				{ name: '外科', icon: '/static/icons/medical/surgery.svg' },
-				{ name: '骨科', icon: '/static/icons/medical/bone.svg' },
-				{ name: '心内科', icon: '/static/icons/medical/heart.svg' },
-				{ name: '神经内科', icon: '/static/icons/medical/nerve.svg' },
-				{ name: '眼科', icon: '/static/icons/medical/eye.svg' },
-				{ name: '口腔科', icon: '/static/icons/medical/dental.svg' },
-				{ name: '康复科', icon: '/static/icons/medical/rehabilitation.svg' }
+				{ name: '内科', icon: rb + '/icons/medical/internal.svg' },
+				{ name: '外科', icon: rb + '/icons/medical/surgery.svg' },
+				{ name: '骨科', icon: rb + '/icons/medical/bone.svg' },
+				{ name: '心内科', icon: rb + '/icons/medical/heart.svg' },
+				{ name: '神经内科', icon: rb + '/icons/medical/nerve.svg' },
+				{ name: '眼科', icon: rb + '/icons/medical/eye.svg' },
+				{ name: '口腔科', icon: rb + '/icons/medical/dental.svg' },
+				{ name: '康复科', icon: rb + '/icons/medical/rehabilitation.svg' }
 			],
 			doctors: [
 				{
 					name: '张医生',
 					title: '主任医师',
 					department: '内科',
-					avatar: '/static/images/medical/doctor1.png'
+					avatar: rb + '/images/medical/doctor1.png'
 				},
 				{
 					name: '李医生',
 					title: '副主任医师',
 					department: '骨科',
-					avatar: '/static/images/medical/doctor2.png'
+					avatar: rb + '/images/medical/doctor2.png'
 				},
 				{
 					name: '王医生',
 					title: '主任医师',
 					department: '心内科',
-					avatar: '/static/images/medical/doctor3.png'
+					avatar: rb + '/images/medical/doctor3.png'
 				}
 			],
 			healthNews: [

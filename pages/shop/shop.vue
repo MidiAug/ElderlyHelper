@@ -31,6 +31,8 @@
 
 <script>
 import { productData } from './productData.js'
+import config from '@/common/config.js';
+const rb = config.resourceBase;
 
 export default {
 	name: 'shop',
@@ -40,7 +42,7 @@ export default {
 			selectedTab: 0,
 			products: Object.values(productData).map(product => ({
 				...product,
-				image: product.images[0] // 使用第一张图片作为列表展示
+				image: rb+product.images[0] // 使用第一张图片作为列表展示
 			}))
 		};
 	},

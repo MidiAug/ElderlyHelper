@@ -36,67 +36,71 @@
 </template>
 
 <script>
+	
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	data() {
 		return {
 			banners: [
 				{
-					image: '/static/pictures/entertainment/rotation1.png',
+					image: rb + '/pictures/entertainment/rotation1.png',
 					url: ''
 				},
 				{
-					image: '/static/pictures/entertainment/rotation2.png',
+					image: rb + '/pictures/entertainment/rotation2.png',
 					url: ''
 				},
 				{
-					image: '/static/pictures/entertainment/rotation3.png',
+					image: rb + '/pictures/entertainment/rotation3.png',
 					url: ''
 				}
 			],
 			functions: [
 				{
 					name: '广场舞',
-					icon: '/static/icons/entertainment/1.png',
+					icon: rb + '/icons/entertainment/1.png',
 					url: '/pages/entertainment/dance'
 				},
 				{
 					name: '录歌房',
-					icon: '/static/icons/entertainment/2.png',
+					icon: rb + '/icons/entertainment/2.png',
 					url: '/pages/entertainment/sing'
 				},
 				{
 					name: '太极',
-					icon: '/static/icons/entertainment/3.png',
+					icon: rb + '/icons/entertainment/3.png',
 					url: '/pages/entertainment/taichi'
 				},
 				{
 					name: '刺绣',
-					icon: '/static/icons/entertainment/4.png',
+					icon: rb + '/icons/entertainment/4.png',
 					url: '/pages/entertainment/embroidery'
 				},
 				{
 					name: '书画',
-					icon: '/static/icons/entertainment/5.png',
+					icon: rb + '/icons/entertainment/5.png',
 					url: '/pages/entertainment/art'
 				},
 				{
 					name: '京剧',
-					icon: '/static/icons/entertainment/6.png',
+					icon: rb + '/icons/entertainment/6.png',
 					url: '/pages/entertainment/opera'
 				},
 				{
 					name: '园艺',
-					icon: '/static/icons/entertainment/7.png',
+					icon: rb + '/icons/entertainment/7.png',
 					url: '/pages/entertainment/garden'
 				},
 				{
 					name: '烹饪',
-					icon: '/static/icons/entertainment/8.png',
+					icon: rb + '/icons/entertainment/8.png',
 					url: '/pages/entertainment/cooking'
 				},
 				{
 					name: '休闲棋牌',
-					icon: '/static/icons/entertainment/9.png',
+					icon: rb + '/icons/entertainment/9.png',
 					url: '/pages/entertainment/chess'
 				}
 			],
@@ -104,7 +108,7 @@ export default {
 				{
 					id: 1,
 					name: '老李头',
-					avatar: '/static/icons/entertainment/role1.png',
+					avatar: rb + '/icons/entertainment/role1.png',
 					messages: [
 						{
 							id: 1,
@@ -141,7 +145,7 @@ export default {
 				{
 					id: 2,
 					name: '大女儿',
-					avatar: '/static/icons/entertainment/role2.png',
+					avatar: rb + '/icons/entertainment/role2.png',
 					messages: [
 						{
 							id: 1,
@@ -178,7 +182,7 @@ export default {
 				{
 					id: 3,
 					name: '二女儿',
-					avatar: '/static/icons/entertainment/role3.png',
+					avatar: rb + '/icons/entertainment/role3.png',
 					messages: [
 						{
 							id: 1,

@@ -22,6 +22,10 @@
 </template>
 
 <script>
+	
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	name: 'category-detail',
 	data() {
@@ -33,14 +37,14 @@ export default {
 					brief: '根据春季特点调理饮食',
 					teacher: '李营养师',
 					views: 1580,
-					cover: '/static/images/health/course1.png'
+					cover: rb + '/images/health/course1.png'
 				},
 				{
 					title: '居家养生运动课程',
 					brief: '适合老年人的居家运动',
 					teacher: '张教练',
 					views: 2190,
-					cover: '/static/images/health/course2.png'
+					cover: rb + '/images/health/course2.png'
 				}
 			]
 		}

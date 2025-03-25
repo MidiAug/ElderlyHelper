@@ -50,20 +50,23 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	name: 'health-class',
 	data() {
 		return {
 			banners: [
-				{ image: '/static/pictures/health/banner1.png' },
-				{ image: '/static/pictures/health/banner2.png' },
-				{ image: '/static/pictures/health/banner3.png' }
+				{ image: rb + '/pictures/health/banner1.png' },
+				{ image: rb + '/pictures/health/banner2.png' },
+				{ image: rb + '/pictures/health/banner3.png' }
 			],
 			categories: [
-				{ name: '饮食养生', icon: '/static/icons/health/diet.png' },
-				{ name: '运动健康', icon: '/static/icons/health/exercise.png' },
-				{ name: '中医养生', icon: '/static/icons/health/tcm.png' },
-				{ name: '心理健康', icon: '/static/icons/health/mental.png' }
+				{ name: '饮食养生', icon: rb + '/icons/health/diet.png' },
+				{ name: '运动健康', icon: rb + '/icons/health/exercise.png' },
+				{ name: '中医养生', icon: rb + '/icons/health/tcm.png' },
+				{ name: '心理健康', icon: rb + '/icons/health/mental.png' }
 			],
 			courses: [
 				{
@@ -71,38 +74,38 @@ export default {
 					brief: '专业营养师教您科学饮食',
 					teacher: '李营养师',
 					views: 2580,
-					cover: '/static/pictures/health/course1.png'
+					cover: rb + '/pictures/health/course1.png'
 				},
 				{
 					title: '适老化运动指南',
 					brief: '安全有效的运动方案',
 					teacher: '张教练',
 					views: 1890,
-					cover: '/static/pictures/health/course2.png'
+					cover: rb + '/pictures/health/course2.png'
 				},
 				{
 					title: '中医养生精要',
 					brief: '传统养生智慧精选',
 					teacher: '王医师',
 					views: 3260,
-					cover: '/static/pictures/health/course3.png'
+					cover: rb + '/pictures/health/course3.png'
 				}
 			],
 			healthTips: [
 				{
 					title: '春季养生要点',
 					brief: '春季养生的关键在于顺应自然...',
-					image: '/static/pictures/health/tip1.png'
+					image: rb + '/pictures/health/tip1.png'
 				},
 				{
 					title: '老年人睡眠指南',
 					brief: '如何提高睡眠质量...',
-					image: '/static/pictures/health/tip2.png'
+					image: rb + '/pictures/health/tip2.png'
 				},
 				{
 					title: '养生茶饮配方',
 					brief: '四季养生茶饮推荐...',
-					image: '/static/pictures/health/tip3.png'
+					image: rb + '/pictures/health/tip3.png'
 				}
 			]
 		}

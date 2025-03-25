@@ -55,6 +55,10 @@
 </template>
 
 <script>
+	
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	data() {
 		return {
@@ -64,10 +68,10 @@ export default {
 			currentAnswer: '',
 			scrollTop: 0,
 			quickActions: [
-				{ name: '天气查询', icon: '/static/icons/assistant/weather.png' },
-				{ name: '闹钟提醒', icon: '/static/icons/assistant/alarm.png' },
-				{ name: '生活服务', icon: '/static/icons/assistant/service.png' },
-				{ name: '紧急求助', icon: '/static/icons/assistant/emergency.png' }
+				{ name: '天气查询', icon: rb + '/icons/assistant/weather.png' },
+				{ name: '闹钟提醒', icon: rb + '/icons/assistant/alarm.png' },
+				{ name: '生活服务', icon: rb + '/icons/assistant/service.png' },
+				{ name: '紧急求助', icon: rb + '/icons/assistant/emergency.png' }
 			],
 			displayedFaqs: [],
 			allFaqs: [

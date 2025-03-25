@@ -58,7 +58,11 @@
             "minified" : true
         },
         "usingComponents" : true,
-        "lazyCodeLoading" : "requiredComponents"
+        "lazyCodeLoading" : "requiredComponents",
+		"packOptions": {
+		    "ignore": [{"type":"folder","value":"static"}],
+		    "include": [{"type":"folder","value":"static/tabbar"}]
+		  }
     },
     "mp-alipay" : {
         "usingComponents" : true

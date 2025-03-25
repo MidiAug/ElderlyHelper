@@ -26,6 +26,9 @@
 </template>
 
 <script>
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	name: 'tip-detail',
 	data() {
@@ -33,7 +36,7 @@ export default {
 			tipTitle: '',
 			tipDate: '2024-03-09',
 			tipSource: '养生小知识',
-			tipImage: '/static/images/health/tip1.png',
+			tipImage: rb + 'mages/health/tip1.png',
 			content: [
 				'春季是养生的重要季节，此时阳气升发，万物复苏，人体的新陈代谢也随之加快。',
 				'在饮食方面，建议多食用温性食物，如韭菜、春笋等时令蔬菜，可以帮助身体适应季节变化。',

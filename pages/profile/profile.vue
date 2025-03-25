@@ -37,20 +37,24 @@
 </template>
 
 <script>
+
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	name: 'profile',
 	data() {
 		return {
 			functions: [
-				{ name: '我的订单', icon: '/static/icons/profile/1.png' },
-				{ name: '我的收藏', icon: '/static/icons/profile/2.png' },
-				{ name: '联系客服', icon: '/static/icons/profile/3.png' }
+				{ name: '我的订单', icon: rb + '/icons/profile/1.png' },
+				{ name: '我的收藏', icon: rb + '/icons/profile/2.png' },
+				{ name: '联系客服', icon: rb + '/icons/profile/3.png' }
 			],
 			settings: [
-				{ name: '个人信息', icon: '/static/icons/profile/11.png' },
-				{ name: '消息通知', icon: '/static/icons/profile/12.png' },
-				{ name: '隐私设置', icon: '/static/icons/profile/13.png' },
-				{ name: '帮助中心', icon: '/static/icons/profile/14.png' }
+				{ name: '个人信息', icon: rb + '/icons/profile/11.png' },
+				{ name: '消息通知', icon: rb + '/icons/profile/12.png' },
+				{ name: '隐私设置', icon: rb + '/icons/profile/13.png' },
+				{ name: '帮助中心', icon: rb + '/icons/profile/14.png' }
 			]
 		};
 	},

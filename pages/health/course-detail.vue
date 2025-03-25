@@ -40,16 +40,20 @@
 </template>
 
 <script>
+	
+import config from '@/common/config.js';
+const rb = config.resourceBase;
+
 export default {
 	name: 'course-detail',
 	data() {
 		return {
 			course: {
 				title: '',
-				cover: '/static/images/health/course1.png',
+				cover: rb + '/images/health/course1.png',
 				teacher: '李营养师',
 				teacherTitle: '高级营养师',
-				teacherAvatar: '/static/images/health/teacher1.png',
+				teacherAvatar: rb + '/images/health/teacher1.png',
 				duration: 45,
 				views: 2580,
 				likes: 326,
