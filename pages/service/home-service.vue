@@ -59,7 +59,7 @@ export default {
 	data() {
 		return {
 			rb:rb,
-			
+
 			categories: [
 				{ name: '保洁服务', icon: rb + '/icons/service/cleaning.png' },
 				{ name: '维修服务', icon: rb + '/icons/service/repair.png' },
@@ -72,21 +72,21 @@ export default {
 					description: '专业保洁，打扫卫生',
 					price: 80,
 					unit: '次',
-					image: rb + '/images/service/cleaning.png'
+					image: rb + '/pictures/service/cleaning.png'
 				},
 				{
 					name: '水电维修',
 					description: '水管漏水，电路维修',
 					price: 100,
 					unit: '次',
-					image: rb + '/images/service/repair.png'
+					image: rb + '/pictures/service/repair.png'
 				},
 				{
 					name: '居家护理',
 					description: '专业护工，贴心照料',
 					price: 150,
 					unit: '天',
-					image: rb + '/images/service/care.png'
+					image: rb + '/pictures/service/care.png'
 				}
 			],
 			guarantees: [
