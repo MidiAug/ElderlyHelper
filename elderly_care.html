@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夕乐教育 - 养老主题网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: rgba(76, 175, 80, 0.9);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        /* 新增旋转提示样式 */
+        .rotation-tip {
+            text-align: center;
+            margin: 1rem 0;
+            animation: float 2s ease-in-out infinite;
+        }
+        .rotation-tip img {
+            width: 80px;
+            height: auto;
+            transform: rotate(30deg);
+            opacity: 0.8;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .content {
+            padding: 2rem;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .section {
+            margin: 2rem 0;
+        }
+        .section h2 {
+            color: #4CAF50;
+        }
+        .videos {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        video {
+            background: #000;
+            border-radius: 8px;
+            width: 100%;
+        }
+        .video-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .video-item {
+            background: rgba(240, 240, 240, 0.9);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .entertainment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+        .entertainment-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .play-btn, .join-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: scale(1.05);
+            background: #45a049;
+        }
+        .music-player {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .qa-section {
+            margin-top: 2rem;
+            text-align: left;
+        }
+        .qa-section form {
+            margin: 1rem 0;
+        }
+        .qa-section input, .qa-section textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: rgba(76, 175, 80, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>夕乐教育</h1>
+    </header>
+    <nav>
+        <a href="#health">养生课堂</a>
+        <a href="#entertainment">休闲娱乐</a>
+        <a href="#qa">夕阳问答</a>
+    </nav>
+    <!-- 新增旋转提示图标 -->
+    <div class="rotation-tip">
+        <img src="rotation3.png" alt="向右滑动提示">
+    </div>
+    <div class="content">
+        <div id="health" class="section">
+            <h2>养生视频课堂</h2>
+            <p>观看养生教学视频，学习健康知识。每日更新中医养生、健康饮食等实用视频教程。</p>
+            <div class="videos">
+                <video controls>
+                    <source src="health_video1.mp4" type="video/mp4">
+                    <source src="health_video1.webm" type="video/webm">
+                    您的浏览器不支持视频播放
+                </video>
+                <div class="video-list">
+                    <div class="video-item">
+                        <h3>清晨养生操</h3>
+                        <button class="play-btn">播放</button>
+                    </div>
+                    <div class="video-item">
+                        <h3>药膳食谱教学</h3>
+                        <button class="play-btn">播放</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="entertainment" class="section">
+            <h2>休闲娱乐区</h2>
+            <div class="entertainment-grid">
+                <div class="entertainment-card">
+                    <h3>在线棋牌室</h3>
+                    <button class="join-btn">立即加入</button>
+                </div>
+                <div class="entertainment-card">
+                    <h3>音乐欣赏</h3>
+                    <div class="music-player">
+                        <button class="play-pause">▶</button>
+                        <div class="playlist">
+                            <div>夕阳红合唱曲</div>
+                            <div>经典老歌联播</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="qa" class="section qa-section">
+            <h2>夕阳问答</h2>
+            <p>有问题？来这里提问！我们的社区会为您解答关于养老、健康、娱乐等方面的问题。</p>
+            <form action="#" method="POST">
+                <label for="question">您的问题：</label>
+                <textarea id="question" name="question" rows="4" placeholder="请输入您的问题..."></textarea>
+                <button type="submit">提交问题</button>
+            </form>
+            <p>常见问题：</p>
+            <ul>
+                <li>如何保持健康的饮食习惯？</li>
+                <li>有哪些适合老年人的运动项目？</li>
+                <li>社区活动如何参与？</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 夕乐教育 - 养老关爱主题网页</p>
+    </footer>
+</body>
+</html>
